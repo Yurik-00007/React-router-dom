@@ -9,12 +9,16 @@ const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
 );
 root.render(
+
 /*
     <BrowserRouter>
-        <App/>
+            {/!*http://localhost:3000/page2*!/}
+<App/>
     </BrowserRouter>
 */
+
     <HashRouter>
+        {/*http://localhost:3000/#/page2*/}
         <App/>
     </HashRouter>
 );

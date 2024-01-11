@@ -17,10 +17,13 @@ function App() {
                 </div>
                 <div className={styles.content}>
                     <Routes>
+                        <Route path={'/'} element={<Navigate to={'page1'}/>}/>
                         <Route path={'page1'} element={<PageOne/>}/>
+                        {/*https://yurik-00007.github.io/React-router-dom/#/page1*/}
                         <Route path={'page2'} element={<PageTwo/>}/>
                         <Route path={'page3'} element={<PageThree/>}/>
                         <Route path={'error404'} element={<Error404/>}/>
+                        {/*все что угодно, кроме тех которые перечислины*/}
                         <Route path={'*'} element={<Navigate to={'error404'}/>}/>
                     </Routes>
                 </div>
